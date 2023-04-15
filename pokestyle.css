@@ -1,0 +1,100 @@
+.pokelogo {
+width: 500px;
+padding-left: 30%;
+}
+
+.pokehead {
+  font-family: 'Pokemon Solid';
+  justify-content: center;
+  padding-left: 50%;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.container {
+		display: grid;
+		grid-template-rows: repeat(auto-fill, minmax(200px, auto)); 
+		grid-gap: 20px;
+	}
+
+	@media (min-width: 600px) {
+		.container {
+			grid-template-columns: repeat(5, 1fr); 
+			display: grid;
+			grid-template-rows: repeat(auto-fill, minmax(200px, auto)); 
+			grid-gap: 20px;
+		}
+		}
+
+.disclaimer {
+	font-family: 'Righteous';
+	padding-left: 60%;
+	padding-top: 0;
+	margin-top: 0;
+	font-size: xx-small;
+}
+
+.aclaracion{
+font-family: 'Righteous';
+margin-top: 10%;
+}
+.card {
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	transition: all 0.2s ease-in-out;
+  font-family: Roboto;
+  background-position: center;
+  background-image: url(Futuristic-grid-80s-vector-background-Graphics-38374382-1-312x208.jpg);
+}
+
+
+
+body {
+  background-image: url(modal-bg-desktop.jpg);
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+}
+
+p {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  font-weight: 500px;
+}
+
+.card:hover {
+	transform: scale(1.05);
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-center {
+	0% {
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+	}
+	100% {
+		-webkit-transform: scale(1.1);
+		        transform: scale(1.1);
+	}
+}
+
+@keyframes scale-up-center {
+	0% {
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+	}
+	100% {
+		-webkit-transform: scale(1.1);
+		        transform: scale(1.1);
+	}
+}
